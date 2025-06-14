@@ -11,15 +11,18 @@ Includes:
 - Dropped and added signals
 - Clean visual layout with newlines
 """
-
+import sys
 import pandas as pd
 from pathlib import Path
 import logging
 import pyarrow.parquet as pq
 import os
 
-# ─── Setup ───
+# ─── Force src/ to be discoverable ─────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 CATALOG_DIR = PROJECT_ROOT / "data" / "catalog"
 CATALOG_DIR.mkdir(parents=True, exist_ok=True)
 

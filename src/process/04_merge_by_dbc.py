@@ -1,13 +1,16 @@
 # Best Practice Merge Script for Same-DBC Group
+import sys
 import pandas as pd
 from pathlib import Path
 import logging
 
-# Setup
+# ─── Force src/ to be discoverable ─────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-MERGED_DIR = PROJECT_ROOT / "data" / "merged"
-MERGED_DIR.mkdir(parents=True, exist_ok=True)
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.utils.paths import PROCESSED_DIR, MERGED_DIR
+
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s — %(levelname)s — %(message)s")
 

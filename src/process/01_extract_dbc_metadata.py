@@ -10,15 +10,14 @@ import json
 import pandas as pd
 import cantools
 from cantools.database.can.signal import NamedSignalValue
+import sys
 
-# ─── Paths ──────────────────────────────────────────────────────
+# ─── Force src/ to be discoverable ─────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DBC_DIR = PROJECT_ROOT / "config" / "dbc"
-REGISTRY_DIR = PROJECT_ROOT / "config" / "registry"
-REGISTRY_DIR.mkdir(parents=True, exist_ok=True)
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
-OUTPUT_CSV = REGISTRY_DIR / "dbc_signals_metadata.csv"
-OUTPUT_ENUMS = REGISTRY_DIR / "enum_maps.json"
+from src.utils.paths import DBC_DIR, REGISTRY_DIR, ENUM_MAPS_PATH, DBC_METADATA_PATH
 
 # ─── Smart Enum Filter ──────────────────────────────────────────
 def normalize_enum_map(choices) -> dict | None:
@@ -87,10 +86,10 @@ for dbc_file in sorted(DBC_DIR.glob("*.dbc")):
 
 # ─── Save Outputs ──────────────────────────────────────────────
 df = pd.DataFrame(signal_rows)
-df.to_csv(OUTPUT_CSV, index=False)
+df.to_csv(DBC_METADATA_PATH, index=False)
 
-with open(OUTPUT_ENUMS, "w") as f:
+with open(ENUM_MAPS_PATH, "w") as f:
     json.dump(enum_maps, f, indent=2)
 
-print(f"✅ Metadata CSV saved to: {OUTPUT_CSV}")
-print(f"✅ Enum JSON saved to:  {OUTPUT_ENUMS}")
+print(f"✅ Metadata CSV saved to: {DBC_METADATA_PATH}")
+print(f"✅ Enum JSON saved to:  {ENUM_MAPS_PATH}")

@@ -11,7 +11,7 @@ Saves output in data/downsampled/ with *_downsampled.parquet filenames.
 - Maintains column order: time first, then sorted signals
 - Logs all steps and summarizes signals kept per file
 """
-
+import sys
 import pandas as pd
 from pathlib import Path
 import logging
@@ -20,14 +20,14 @@ import logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s — %(levelname)s — %(message)s",
-    handlers=[logging.StreamHandler()]
-)
+    handlers=[logging.StreamHandler()])
 
-# ─── Constants and Paths ───────────────────────────────────────
+# ─── Force src/ to be discoverable ─────────────────────────────
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DECODED_DIR = PROJECT_ROOT / "data" / "decoded"
-DOWNSAMPLED_DIR = PROJECT_ROOT / "data" / "downsampled"
-DOWNSAMPLED_DIR.mkdir(parents=True, exist_ok=True)
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+    
+from src.utils.paths import DECODED_DIR, DOWNSAMPLED_DIR 
 
 TARGET_HZ = 1  # Downsample to 1Hz
 

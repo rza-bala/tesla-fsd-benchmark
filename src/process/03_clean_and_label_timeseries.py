@@ -6,19 +6,21 @@ Cleans and labels downsampled time series:
 - Saves filtered Parquet files to data/processed/
 - Generates signal cleaning summary report
 """
-
+import sys
 import pandas as pd
 import json
 import logging
 from datetime import datetime
 from pathlib import Path
 
-# ─── Paths ──────────────────────────────────────────────────────
-PROJECT_ROOT = Path(__file__).resolve().parents[2] if '__file__' in globals() else Path.cwd().parents[1]
-DOWNSAMPLED_DIR = PROJECT_ROOT / "data" / "downsampled"
-PROCESSED_DIR = PROJECT_ROOT / "data" / "processed"
-REGISTRY_DIR = PROJECT_ROOT / "config" / "registry"
-ENUM_MAP_PATH = REGISTRY_DIR / "enum_maps.json"
+
+# ─── Force src/ to be discoverable ─────────────────────────────
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from src.utils.paths import DOWNSAMPLED_DIR, PROCESSED_DIR, REGISTRY_DIR, ENUM_MAPS_PATH
+
 
 PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -33,7 +35,7 @@ logging.basicConfig(
 )
 
 # ─── Load Enum Metadata ─────────────────────────────────────────
-with open(ENUM_MAP_PATH) as f:
+with open(ENUM_MAPS_PATH) as f:
     enum_map = json.load(f)
 enum_signals = set(enum_map.keys())
 
