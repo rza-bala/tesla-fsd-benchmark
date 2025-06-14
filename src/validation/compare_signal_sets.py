@@ -1,93 +1,116 @@
 #!/usr/bin/env python3
 """
-Compares signal columns across pipeline stages:
+Compares signal sets across pipeline stages:
 - decoded → downsampled
 - downsampled → processed
 - processed → merged
 
-Generates:
-- data/catalog/signal_diff_report.csv
-
-Each row includes: file name, stage pair, # dropped, # added, dropped signals, etc.
+Outputs detailed CSV and Markdown reports to: data/catalog/
+Includes:
+- Total signals in each stage
+- Dropped and added signals
+- Clean visual layout with newlines
 """
 
 import pandas as pd
 from pathlib import Path
 import logging
+import pyarrow.parquet as pq
+import os
 
-# ─── Path Setup ─────────────────────────────────────────────────
+# ─── Setup ───
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = PROJECT_ROOT / "data"
-CATALOG_DIR = DATA_DIR / "catalog"
+CATALOG_DIR = PROJECT_ROOT / "data" / "catalog"
 CATALOG_DIR.mkdir(parents=True, exist_ok=True)
 
-STAGES = ["decoded", "downsampled", "processed", "merged"]
-OUTPUT_CSV = CATALOG_DIR / "signal_diff_report.csv"
+STAGES = [
+    ("decoded", "downsampled"),
+    ("downsampled", "processed"),
+    ("processed", "merged"),
+]
 
-# ─── Logging Setup ──────────────────────────────────────────────
+CSV_PATH = CATALOG_DIR / "signal_diff_report.csv"
+MD_PATH = CATALOG_DIR / "signal_diff_report.md"
+
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s — %(levelname)s — %(message)s",
+    format="%(asctime)s — %(levelname)s — %(message)s"
 )
 
-# ─── Compare Two Parquet Files ─────────────────────────────────
-def compare_files(before_path: Path, after_path: Path, stage_pair: str):
+# ─── Helpers ───
+def list_parquet_signals(path: Path) -> set:
     try:
-        before_cols = pd.read_parquet(before_path, nrows=1).columns.drop("time", errors="ignore")
-        after_cols = pd.read_parquet(after_path, nrows=1).columns.drop("time", errors="ignore")
-
-        dropped = sorted(set(before_cols) - set(after_cols))
-        added = sorted(set(after_cols) - set(before_cols))
-        kept = sorted(set(before_cols).intersection(after_cols))
-
-        return {
-            "file_stem": before_path.stem,
-            "stage_pair": stage_pair,
-            "before_signals": len(before_cols),
-            "after_signals": len(after_cols),
-            "kept": len(kept),
-            "dropped": len(dropped),
-            "added": len(added),
-            "dropped_signals": "; ".join(dropped),
-            "added_signals": "; ".join(added),
-        }
+        cols = pq.read_table(path).schema.names
+        return set(cols) - {"time"}
     except Exception as e:
-        logging.error(f"❌ Failed comparison {before_path.name} → {after_path.name}: {e}")
-        return None
+        logging.error(f"❌ Failed reading {path.name}: {e}")
+        return set()
 
-# ─── Compare All Pairs ─────────────────────────────────────────
+# ─── Comparison Logic ───
 records = []
+md_lines = ["# Signal Comparison Report\n"]
 
-for i in range(len(STAGES) - 1):
-    before_stage = STAGES[i]
-    after_stage = STAGES[i + 1]
-    stage_pair = f"{before_stage} → {after_stage}"
+for src_stage, dst_stage in STAGES:
+    src_dir = PROJECT_ROOT / "data" / src_stage
+    dst_dir = PROJECT_ROOT / "data" / dst_stage
 
-    before_dir = DATA_DIR / before_stage
-    after_dir = DATA_DIR / after_stage
+    src_files = sorted(src_dir.glob("*.parquet"))
+    if not src_files:
+        logging.warning(f"⚠️ No files found in: {src_dir.name}")
+        continue
 
-    before_files = sorted(before_dir.glob("*.parquet"))
+    for src_path in src_files:
+        stem = src_path.stem
 
-    for before_path in before_files:
-        expected_after = after_dir / f"{before_path.stem}_filtered.parquet" \
-            if "processed" in after_stage else \
-            after_dir / f"{before_path.stem}_downsampled.parquet" \
-            if "downsampled" in after_stage else \
-            after_dir / f"{before_path.stem}.parquet"
+        if dst_stage == "processed":
+            dst_filename = stem + "_filtered.parquet"
+        elif dst_stage == "merged":
+            parts = stem.split("_")
+            dst_filename = f"{parts[1]}-{parts[2]}.parquet"
+        else:
+            dst_filename = stem + ".parquet"
 
-        if not expected_after.exists():
-            logging.warning(f"⚠️ Missing {stage_pair} match for {before_path.name}")
+        dst_path = dst_dir / dst_filename
+        if not dst_path.exists():
+            logging.warning(f"⚠️ Missing {src_stage} → {dst_stage} match for {src_path.name}")
             continue
 
-        result = compare_files(before_path, expected_after, stage_pair)
-        if result:
-            records.append(result)
-            logging.info(f"✅ Compared: {before_path.name} → {expected_after.name} [Dropped: {result['dropped']}, Added: {result['added']}]")
+        src_signals = list_parquet_signals(src_path)
+        dst_signals = list_parquet_signals(dst_path)
+        if not src_signals or not dst_signals:
+            continue
 
-# ─── Save Final CSV ────────────────────────────────────────────
+        dropped = sorted(src_signals - dst_signals)
+        added = sorted(dst_signals - src_signals)
+        kept = sorted(src_signals & dst_signals)
+
+        records.append({
+            "Stage": f"{src_stage} → {dst_stage}",
+            "File": stem,
+            "# Source Signals": len(src_signals),
+            "# Destination Signals": len(dst_signals),
+            "# Kept": len(kept),
+            "# Dropped": len(dropped),
+            "# Added": len(added),
+            "Dropped Signals": "; ".join(dropped),
+            "Added Signals": "; ".join(added),
+        })
+
+        md_lines.append(f"## {src_stage} → {dst_stage}: `{stem}`\n")
+        md_lines.append(f"**Dropped ({len(dropped)}):**")
+        md_lines.extend([f"- {s}" for s in dropped])
+        md_lines.append(f"\n**Added ({len(added)}):**")
+        md_lines.extend([f"- {s}" for s in added])
+        md_lines.append("\n---\n")
+
+        logging.info(f"🔍 Compared: {stem} ({src_stage} → {dst_stage}) — Dropped: {len(dropped)}, Added: {len(added)}")
+
+# ─── Save Reports ───
 if records:
-    df = pd.DataFrame(records)
-    df.to_csv(OUTPUT_CSV, index=False)
-    logging.info(f"📊 Saved signal diff report: {OUTPUT_CSV}")
+    pd.DataFrame(records).to_csv(CSV_PATH, index=False)
+    with open(MD_PATH, "w", encoding="utf-8") as f:
+        f.write("\n".join(md_lines))
+    logging.info(f"✅ Saved CSV: {CSV_PATH}")
+    logging.info(f"✅ Saved Markdown: {MD_PATH}")
 else:
     logging.warning("⚠️ No comparisons completed.")
