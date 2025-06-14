@@ -1,0 +1,1938 @@
+{
+  "DAS_steeringHapticRequest": {
+    "1": "ACTIVE",
+    "0": "IDLE"
+  },
+  "DAS_steeringAngleRequest": {
+    "16384": "ZERO_ANGLE"
+  },
+  "DAS_steeringControlType": {
+    "1": "ANGLE_CONTROL",
+    "3": "DISABLED",
+    "0": "NONE",
+    "2": "RESERVED"
+  },
+  "DAS_accState": {
+    "15": "FAULT_SNA",
+    "13": "ACC_CANCEL_GENERIC_SILENT",
+    "11": "APC_SELFPARK_START",
+    "10": "APC_UNPARK_COMPLETE",
+    "9": "APC_PAUSE",
+    "8": "APC_ABORT",
+    "7": "APC_COMPLETE",
+    "6": "APC_FORWARD",
+    "5": "APC_BACKWARD",
+    "4": "ACC_ON",
+    "3": "ACC_HOLD",
+    "0": "ACC_CANCEL_GENERIC"
+  },
+  "DAS_aebEvent": {
+    "3": "AEB_SNA",
+    "2": "AEB_FAULT",
+    "1": "AEB_ACTIVE",
+    "0": "AEB_NOT_ACTIVE"
+  },
+  "DAS_locMode": {
+    "3": "DAS_LOC_DRIVERLESS",
+    "2": "DAS_LOC_RESTRICTED",
+    "1": "DAS_LOC_NORMAL",
+    "0": "DAS_LOC_OFF"
+  },
+  "DAS_locState": {
+    "7": "DAS_LOC_FAULT_SNA",
+    "6": "DAS_LOC_AEB_ACTIVE",
+    "2": "DAS_LOC_CANCEL_SILENT",
+    "1": "DAS_LOC_CANCEL_GENERIC",
+    "0": "DAS_LOC_HEALTHY"
+  },
+  "DAS_locRequest": {
+    "4": "DAS_RQ_PARK",
+    "3": "DAS_RQ_HOLD",
+    "2": "DAS_RQ_BACKWARD",
+    "1": "DAS_RQ_FORWARD",
+    "0": "DAS_RQ_IDLE"
+  },
+  "DAS_leftLineUsage": {
+    "3": "BLACKLISTED",
+    "2": "FUSED",
+    "1": "AVAILABLE",
+    "0": "REJECTED_UNAVAILABLE"
+  },
+  "DAS_rightLineUsage": {
+    "3": "BLACKLISTED",
+    "2": "FUSED",
+    "1": "AVAILABLE",
+    "0": "REJECTED_UNAVAILABLE"
+  },
+  "DAS_leftFork": {
+    "3": "LEFT_FORK_UNAVAILABLE",
+    "2": "LEFT_FORK_SELECTED",
+    "1": "LEFT_FORK_AVAILABLE",
+    "0": "LEFT_FORK_NONE"
+  },
+  "DAS_rightFork": {
+    "3": "RIGHT_FORK_UNAVAILABLE",
+    "2": "RIGHT_FORK_SELECTED",
+    "1": "RIGHT_FORK_AVAILABLE",
+    "0": "RIGHT_FORK_NONE"
+  },
+  "GTW_epasPowerMode": {
+    "0": "DRIVE_OFF",
+    "1": "DRIVE_ON",
+    "3": "LOAD_SHED",
+    "2": "SHUTTING_DOWN",
+    "15": "SNA"
+  },
+  "GTW_epasTuneRequest": {
+    "1": "DM_COMFORT",
+    "3": "DM_SPORT",
+    "2": "DM_STANDARD",
+    "0": "FAIL_SAFE_DEFAULT",
+    "4": "RWD_COMFORT",
+    "6": "RWD_SPORT",
+    "5": "RWD_STANDARD",
+    "7": "SNA"
+  },
+  "GTW_epasControlType": {
+    "0": "WITHOUT",
+    "1": "WITH_ANGLE",
+    "3": "WITH_BOTH",
+    "2": "WITH_TORQUE"
+  },
+  "GTW_epasLDWEnabled": {
+    "1": "ALLOWED",
+    "0": "INHIBITED"
+  },
+  "EPAS_currentTuneMode": {
+    "1": "DM_COMFORT",
+    "3": "DM_SPORT",
+    "2": "DM_STANDARD",
+    "0": "FAIL_SAFE_DEFAULT",
+    "4": "RWD_COMFORT",
+    "6": "RWD_SPORT",
+    "5": "RWD_STANDARD",
+    "7": "UNAVAILABLE"
+  },
+  "EPAS_steeringReduced": {
+    "0": "NORMAL_ASSIST",
+    "1": "REDUCED_ASSIST"
+  },
+  "EPAS_steeringFault": {
+    "1": "FAULT",
+    "0": "NO_FAULT"
+  },
+  "EPAS_eacErrorCode": {
+    "14": "EAC_ERROR_EPB_INHIBIT",
+    "3": "EAC_ERROR_HANDS_ON",
+    "7": "EAC_ERROR_HIGH_ANGLE_RATE_REQ",
+    "9": "EAC_ERROR_HIGH_ANGLE_RATE_SAFETY",
+    "6": "EAC_ERROR_HIGH_ANGLE_REQ",
+    "8": "EAC_ERROR_HIGH_ANGLE_SAFETY",
+    "10": "EAC_ERROR_HIGH_MMOT_SAFETY",
+    "11": "EAC_ERROR_HIGH_TORSION_SAFETY",
+    "0": "EAC_ERROR_IDLE",
+    "12": "EAC_ERROR_LOW_ASSIST",
+    "2": "EAC_ERROR_MAX_SPEED",
+    "1": "EAC_ERROR_MIN_SPEED",
+    "13": "EAC_ERROR_PINION_VEL_DIFF",
+    "4": "EAC_ERROR_TMP_FAULT",
+    "5": "EAR_ERROR_MAX_STEER_DELTA",
+    "15": "SNA"
+  },
+  "EPAS_torsionBarTorque": {
+    "0": "SEE_SPECIFICATION",
+    "4095": "SNA",
+    "4094": "UNDEFINABLE_DATA"
+  },
+  "EPAS_handsOnLevel": {
+    "0": "0",
+    "1": "1",
+    "2": "2",
+    "3": "3"
+  },
+  "EPAS_eacStatus": {
+    "2": "EAC_ACTIVE",
+    "1": "EAC_AVAILABLE",
+    "3": "EAC_FAULT",
+    "0": "EAC_INHIBITED",
+    "4": "SNA"
+  },
+  "StW_AnglSens_Id": {
+    "2": "MUST",
+    "0": "PSBL",
+    "1": "SELF"
+  },
+  "StW_AnglSens_Stat": {
+    "2": "ERR",
+    "3": "ERR_INI",
+    "1": "INI",
+    "0": "OK"
+  },
+  "StW_AnglHP_Sens_Id": {
+    "3": "SNA",
+    "2": "KOSTAL",
+    "1": "DELPHI",
+    "0": "TEST"
+  },
+  "StW_AnglHP_Sens_Stat": {
+    "3": "SNA",
+    "2": "ERR",
+    "1": "INI",
+    "0": "OK"
+  },
+  "DI_soptState": {
+    "7": "SOPT_TEST_SNA",
+    "4": "SOPT_TEST_NOT_RUN",
+    "3": "SOPT_TEST_PASSED",
+    "2": "SOPT_TEST_FAILED",
+    "1": "SOPT_TEST_IN_PROGRESS",
+    "0": "SOPT_PRE_TEST"
+  },
+  "DI_gear": {
+    "7": "DI_GEAR_SNA",
+    "4": "DI_GEAR_D",
+    "3": "DI_GEAR_N",
+    "2": "DI_GEAR_R",
+    "1": "DI_GEAR_P",
+    "0": "DI_GEAR_INVALID"
+  },
+  "DI_brakePedal": {
+    "1": "Applied",
+    "0": "Not_applied"
+  },
+  "DI_gearRequest": {
+    "7": "DI_GEAR_SNA",
+    "4": "DI_GEAR_D",
+    "3": "DI_GEAR_N",
+    "2": "DI_GEAR_R",
+    "1": "DI_GEAR_P",
+    "0": "DI_GEAR_INVALID"
+  },
+  "DI_torqueInterfaceFailure": {
+    "1": "TORQUE_INTERFACE_FAILED",
+    "0": "TORQUE_INTERFACE_NORMAL"
+  },
+  "DI_brakePedalState": {
+    "3": "SNA",
+    "2": "INVALID",
+    "1": "ON",
+    "0": "OFF"
+  },
+  "DI_epbParkRequest": {
+    "1": "Park_requested",
+    "0": "No_request"
+  },
+  "DI_epbInterfaceReady": {
+    "1": "EPB_INTERFACE_READY",
+    "0": "EPB_INTERFACE_NOT_READY"
+  },
+  "ESP_espLampFlash": {
+    "1": "FLASH",
+    "0": "OFF"
+  },
+  "ESP_espFaultLamp": {
+    "0": "OFF",
+    "1": "ON"
+  },
+  "ESP_tcLampFlash": {
+    "1": "FLASH",
+    "0": "OFF"
+  },
+  "ESP_brakeDiscWipingActive": {
+    "1": "ACTIVE",
+    "0": "INACTIVE"
+  },
+  "ESP_brakeLamp": {
+    "0": "OFF",
+    "1": "ON"
+  },
+  "ESP_absBrakeEvent": {
+    "1": "ACTIVE",
+    "0": "NOT_ACTIVE"
+  },
+  "ESP_hillStartAssistActive": {
+    "1": "ACTIVE",
+    "0": "INACTIVE",
+    "2": "NOT_AVAILABLE",
+    "3": "SNA"
+  },
+  "ESP_stabilityControlSts": {
+    "2": "ENGAGED",
+    "3": "FAULTED",
+    "5": "INIT",
+    "4": "NOT_CONFIGURED",
+    "0": "OFF",
+    "1": "ON"
+  },
+  "ESP_espOffLamp": {
+    "0": "OFF",
+    "1": "ON"
+  },
+  "ESP_absFaultLamp": {
+    "0": "OFF",
+    "1": "ON"
+  },
+  "CERRD": {
+    "1": "CAN error detect",
+    "0": "no Can error detected"
+  },
+  "DOOR_STATE_FL": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "DOOR_STATE_FR": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "DOOR_STATE_RL": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "DOOR_STATE_RR": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "BOOT_STATE": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "GTW_updateInProgress": {
+    "1": "IN_PROGRESS",
+    "2": "IN_PROGRESS_NOT_USED",
+    "3": "IN_PROGRESS_SNA",
+    "0": "NOT_IN_PROGRESS"
+  },
+  "DOOR_STATE_FrontTrunk": {
+    "2": "Init",
+    "3": "SNA",
+    "0": "closed",
+    "1": "open"
+  },
+  "MCU_transportModeOn": {
+    "0": "NORMAL_MODE"
+  },
+  "MCU_factoryMode": {
+    "1": "FACTORY_MODE",
+    "0": "NORMAL_MODE"
+  },
+  "DI_systemState": {
+    "3": "ABORT",
+    "4": "ENABLE",
+    "2": "FAULT",
+    "1": "STANDBY",
+    "0": "UNAVAILABLE"
+  },
+  "DI_vehicleHoldState": {
+    "2": "BLEND_IN",
+    "4": "BLEND_OUT",
+    "6": "FAULT",
+    "7": "INIT",
+    "5": "PARK",
+    "1": "STANDBY",
+    "3": "STANDSTILL",
+    "0": "UNAVAILABLE"
+  },
+  "DI_state": {
+    "3": "ABORT",
+    "4": "ENABLE",
+    "2": "FAULT",
+    "1": "STANDBY",
+    "0": "UNAVAILABLE"
+  },
+  "DI_cruiseState": {
+    "2": "ENABLED",
+    "5": "FAULT",
+    "0": "OFF",
+    "4": "OVERRIDE",
+    "7": "PRE_CANCEL",
+    "6": "PRE_FAULT",
+    "1": "STANDBY",
+    "3": "STANDSTILL"
+  },
+  "DI_immobilizerState": {
+    "2": "AUTHENTICATING",
+    "3": "DISARMED",
+    "6": "FAULT",
+    "4": "IDLE",
+    "0": "INIT_SNA",
+    "1": "REQUEST",
+    "5": "RESET"
+  },
+  "DI_speedUnits": {
+    "1": "KPH",
+    "0": "MPH"
+  },
+  "DI_aebState": {
+    "2": "ENABLED",
+    "4": "FAULT",
+    "7": "SNA",
+    "1": "STANDBY",
+    "3": "STANDSTILL",
+    "0": "UNAVAILABLE"
+  },
+  "StW_Sw_Stat3": {
+    "7": "SNA",
+    "6": "NDEF6",
+    "5": "NDEF5",
+    "4": "NDEF4",
+    "3": "PLUS_MINUS",
+    "2": "MINUS",
+    "1": "PLUS",
+    "0": "NPSD"
+  },
+  "MsgTxmtId": {
+    "3": "NDEF3",
+    "2": "NDEF2",
+    "1": "SCCM",
+    "0": "EWM"
+  },
+  "TSL_RND_Posn_StW": {
+    "15": "SNA",
+    "8": "D",
+    "6": "INI",
+    "4": "N_DOWN",
+    "2": "N_UP",
+    "1": "R",
+    "0": "IDLE"
+  },
+  "TSL_P_Psd_StW": {
+    "3": "SNA",
+    "2": "INI",
+    "1": "PSD",
+    "0": "IDLE"
+  },
+  "SpdCtrlLvr_Stat": {
+    "32": "DN_1ST",
+    "16": "UP_1ST",
+    "8": "DN_2ND",
+    "4": "UP_2ND",
+    "2": "RWD",
+    "1": "FWD",
+    "0": "IDLE"
+  },
+  "DTR_Dist_Rq": {
+    "255": "SNA",
+    "200": "ACC_DIST_7",
+    "166": "ACC_DIST_6",
+    "133": "ACC_DIST_5",
+    "100": "ACC_DIST_4",
+    "66": "ACC_DIST_3",
+    "33": "ACC_DIST_2",
+    "0": "ACC_DIST_1"
+  },
+  "TurnIndLvr_Stat": {
+    "3": "SNA",
+    "2": "RIGHT",
+    "1": "LEFT",
+    "0": "IDLE"
+  },
+  "HiBmLvr_Stat": {
+    "3": "SNA",
+    "2": "HIBM_FLSH_ON_PSD",
+    "1": "HIBM_ON_PSD",
+    "0": "IDLE"
+  },
+  "WprWashSw_Psd": {
+    "3": "SNA",
+    "2": "WASH",
+    "1": "TIPWIPE",
+    "0": "NPSD"
+  },
+  "WprWash_R_Sw_Posn_V2": {
+    "3": "SNA",
+    "2": "WASH",
+    "1": "INTERVAL",
+    "0": "OFF"
+  },
+  "StW_Lvr_Stat": {
+    "4": "STW_BACK",
+    "3": "STW_FWD",
+    "2": "STW_DOWN",
+    "1": "STW_UP",
+    "0": "NPSD"
+  },
+  "StW_Cond_Psd": {
+    "3": "SNA",
+    "2": "DOWN",
+    "1": "UP",
+    "0": "NPSD"
+  },
+  "HrnSw_Psd": {
+    "3": "SNA",
+    "2": "NDEF2",
+    "1": "PSD",
+    "0": "NPSD"
+  },
+  "StW_Sw00_Psd": {
+    "1": "PRESSED",
+    "0": "NOT_PRESSED_SNA"
+  },
+  "StW_Sw01_Psd": {
+    "1": "PRESSED",
+    "0": "NOT_PRESSED_SNA"
+  },
+  "StW_Sw03_Psd": {
+    "1": "PRESSED",
+    "0": "NOT_PRESSED_SNA"
+  },
+  "StW_Sw04_Psd": {
+    "1": "PRESSED",
+    "0": "NOT_PRESSED_SNA"
+  },
+  "WprSw6Posn": {
+    "7": "SNA",
+    "6": "STAGE2",
+    "5": "STAGE1",
+    "4": "INTERVAL4",
+    "3": "INTERVAL3",
+    "2": "INTERVAL2",
+    "1": "INTERVAL1",
+    "0": "OFF"
+  },
+  "DrRLtch_RR_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "DrRLtch_RL_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "DrRLtch_FR_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "DrRLtch_FL_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "EngHd_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "DL_RLtch_Stat": {
+    "1": "CLS",
+    "0": "NDEF0",
+    "2": "OPN",
+    "3": "SNA"
+  },
+  "LgtSens_Night": {
+    "0": "DAY",
+    "1": "NIGHT"
+  },
+  "MPkBrk_Stat": {
+    "1": "ENGG",
+    "0": "RELS"
+  },
+  "Trlr_Stat": {
+    "2": "NDEF2",
+    "0": "NONE",
+    "1": "OK",
+    "3": "SNA"
+  },
+  "RevGr_Engg": {
+    "0": "DISENGG",
+    "1": "ENGG",
+    "2": "NDEF2",
+    "3": "SNA"
+  },
+  "StW_Cond_Stat": {
+    "3": "BLINK",
+    "1": "NDEF1",
+    "0": "OFF",
+    "2": "ON"
+  },
+  "Bckl_Sw_RM_Stat_SAM_R": {
+    "2": "FLT",
+    "1": "NOT",
+    "0": "OK",
+    "3": "SNA"
+  },
+  "Bckl_Sw_RR_Stat_SAM_R": {
+    "2": "FLT",
+    "1": "NOT",
+    "0": "OK",
+    "3": "SNA"
+  },
+  "Bckl_Sw_RL_Stat_SAM_R": {
+    "2": "FLT",
+    "1": "NOT",
+    "0": "OK",
+    "3": "SNA"
+  },
+  "UI_mapSpeedLimitUnits": {
+    "1": "KPH",
+    "0": "MPH"
+  },
+  "UI_userSpeedOffsetUnits": {
+    "1": "KPH",
+    "0": "MPH"
+  },
+  "MCU_clusterReadyForDrive": {
+    "0": "NO_SNA",
+    "1": "YES"
+  },
+  "driverBrakeStatus": {
+    "2": "APPLIED",
+    "1": "NOT_APPLIED"
+  },
+  "autopilotStatus": {
+    "5": "ACTIVE_NAVIGATE_ON_AUTOPILOT",
+    "4": "ACTIVE_2",
+    "3": "ACTIVE_1",
+    "2": "AVAILABLE",
+    "1": "UNAVAILABLE",
+    "0": "DISABLED"
+  },
+  "DAS_blindSpotRearLeft": {
+    "3": "SNA",
+    "2": "WARNING_LEVEL_2",
+    "1": "WARNING_LEVEL_1",
+    "0": "NO_WARNING"
+  },
+  "DAS_blindSpotRearRight": {
+    "3": "SNA",
+    "2": "WARNING_LEVEL_2",
+    "1": "WARNING_LEVEL_1",
+    "0": "NO_WARNING"
+  },
+  "DAS_suppressSpeedWarning": {
+    "1": "Suppress_Speed_Warning",
+    "0": "Do_Not_Suppress"
+  },
+  "DAS_heaterState": {
+    "1": "HEATER_ON",
+    "0": "HEATER_OFF_SNA"
+  },
+  "DAS_forwardCollisionWarning": {
+    "3": "SNA",
+    "1": "FORWARD_COLLISION_WARNING",
+    "0": "NONE"
+  },
+  "DAS_autoparkReady": {
+    "1": "AUTOPARK_READY",
+    "0": "AUTOPARK_UNAVAILABLE"
+  },
+  "DAS_sideCollisionAvoid": {
+    "3": "SNA",
+    "2": "AVOID_RIGHT",
+    "1": "AVOID_LEFT",
+    "0": "NONE"
+  },
+  "DAS_sideCollisionWarning": {
+    "3": "WARN_LEFT_RIGHT",
+    "2": "WARN_RIGHT",
+    "1": "WARN_LEFT",
+    "0": "NONE"
+  },
+  "DAS_sideCollisionInhibit": {
+    "1": "INHIBIT",
+    "0": "NO_INHIBIT"
+  },
+  "DAS_csaState": {
+    "3": "CSA_EXTERNAL_STATE_HOLD",
+    "2": "CSA_EXTERNAL_STATE_ENABLE",
+    "1": "CSA_EXTERNAL_STATE_AVAILABLE",
+    "0": "CSA_EXTERNAL_STATE_UNAVAILABLE"
+  },
+  "DAS_laneDepartureWarning": {
+    "5": "SNA",
+    "4": "RIGHT_WARNING_SEVERE",
+    "3": "LEFT_WARNING_SEVERE",
+    "2": "RIGHT_WARNING",
+    "1": "LEFT_WARNING",
+    "0": "NONE"
+  },
+  "DAS_fleetSpeedState": {
+    "3": "FLEETSPEED_HOLD",
+    "2": "FLEETSPEED_ACTIVE",
+    "1": "FLEETSPEED_AVAILABLE",
+    "0": "FLEETSPEED_UNAVAILABLE"
+  },
+  "DAS_autopilotHandsOnState": {
+    "15": "LC_HANDS_ON_SNA",
+    "8": "LC_HANDS_ON_SUSPENDED",
+    "7": "LC_HANDS_ON_REQD_STRUCK_OUT",
+    "5": "LC_HANDS_ON_REQD_CHIME_2",
+    "4": "LC_HANDS_ON_REQD_CHIME_1",
+    "3": "LC_HANDS_ON_REQD_VISUAL",
+    "2": "LC_HANDS_ON_REQD_NOT_DETECTED",
+    "1": "LC_HANDS_ON_REQD_DETECTED",
+    "0": "LC_HANDS_ON_NOT_REQD"
+  },
+  "DAS_autoLaneChangeState": {
+    "31": "ALC_SNA",
+    "30": "ALC_ABORT_MISSION_PLAN_INVALID",
+    "29": "ALC_ABORT_TIMEOUT",
+    "28": "ALC_WAITING_HANDS_ON",
+    "27": "ALC_BLOCKED_LANE_TYPE_R",
+    "26": "ALC_BLOCKED_LANE_TYPE_L",
+    "25": "ALC_BLOCKED_VEH_TTC_AND_USS_R",
+    "24": "ALC_BLOCKED_VEH_TTC_R",
+    "23": "ALC_BLOCKED_VEH_TTC_AND_USS_L",
+    "22": "ALC_BLOCKED_VEH_TTC_L",
+    "21": "ALC_UNAVAILABLE_SOLID_LANE_LINE",
+    "20": "ALC_ABORT_OTHER_REASON",
+    "19": "ALC_ABORT_BLINKER_TURNED_OFF",
+    "18": "ALC_ABORT_LC_HEALTH_BAD",
+    "17": "ALC_ABORT_POOR_VIEW_RANGE",
+    "16": "ALC_ABORT_SIDE_OBSTACLE_PRESENT_R",
+    "15": "ALC_ABORT_SIDE_OBSTACLE_PRESENT_L",
+    "14": "ALC_WAITING_FOR_FWD_OBST_TO_PASS_R",
+    "13": "ALC_WAITING_FOR_FWD_OBST_TO_PASS_L",
+    "12": "ALC_WAITING_FOR_SIDE_OBST_TO_PASS_R",
+    "11": "ALC_WAITING_FOR_SIDE_OBST_TO_PASS_L",
+    "10": "ALC_IN_PROGRESS_R",
+    "9": "ALC_IN_PROGRESS_L",
+    "8": "ALC_AVAILABLE_BOTH",
+    "7": "ALC_AVAILABLE_ONLY_R",
+    "6": "ALC_AVAILABLE_ONLY_L",
+    "5": "ALC_UNAVAILABLE_VEHICLE_SPEED",
+    "4": "ALC_UNAVAILABLE_EXITING_HIGHWAY",
+    "3": "ALC_UNAVAILABLE_TP_FOLLOW",
+    "2": "ALC_UNAVAILABLE_SONICS_INVALID",
+    "1": "ALC_UNAVAILABLE_NO_LANES",
+    "0": "ALC_UNAVAILABLE_DISABLED"
+  },
+  "DAS_pmmObstacleSeverity": {
+    "7": "PMM_SNA",
+    "6": "PMM_ACCEL_LIMIT",
+    "5": "PMM_CRASH_FRONT",
+    "4": "PMM_CRASH_REAR",
+    "3": "PMM_BRAKE_REQUEST",
+    "2": "PMM_IMMINENT_FRONT",
+    "1": "PMM_IMMINENT_REAR",
+    "0": "PMM_NONE"
+  },
+  "DAS_pmmLoggingRequest": {
+    "1": "TRUE",
+    "0": "FALSE"
+  },
+  "DAS_activationFailureStatus": {
+    "2": "LC_ACTIVATION_FAILED_2",
+    "1": "LC_ACTIVATION_FAILED_1",
+    "0": "LC_ACTIVATION_IDLE"
+  },
+  "DAS_pmmUltrasonicsFaultReason": {
+    "4": "PMM_ULTRASONICS_INVALID_MIA",
+    "3": "PMM_ULTRASONICS_BLOCKED_BOTH",
+    "2": "PMM_ULTRASONICS_BLOCKED_REAR",
+    "1": "PMM_ULTRASONICS_BLOCKED_FRONT",
+    "0": "PMM_ULTRASONICS_NO_FAULT"
+  },
+  "DAS_pmmRadarFaultReason": {
+    "2": "PMM_RADAR_INVALID_MIA",
+    "1": "PMM_RADAR_BLOCKED_FRONT",
+    "0": "PMM_RADAR_NO_FAULT"
+  },
+  "DAS_pmmSysFaultReason": {
+    "7": "PMM_FAULT_BRAKE_PEDAL_INHIBIT",
+    "6": "PMM_FAULT_ROAD_TYPE",
+    "5": "PMM_FAULT_DISABLED_BY_USER",
+    "4": "PMM_FAULT_STEERING_ANGLE_RATE",
+    "3": "PMM_FAULT_DI_FAULT",
+    "2": "PMM_FAULT_SPEED",
+    "1": "PMM_FAULT_DAS_DISABLED",
+    "0": "PMM_FAULT_NONE"
+  },
+  "DAS_pmmCameraFaultReason": {
+    "2": "PMM_CAMERA_INVALID_MIA",
+    "1": "PMM_CAMERA_BLOCKED_FRONT",
+    "0": "PMM_CAMERA_NO_FAULT"
+  },
+  "DAS_ACC_report": {
+    "24": "ACC_REPORT_BEHAVIOR_REPORT",
+    "23": "ACC_REPORT_CAMERA_ONLY",
+    "22": "ACC_REPORT_RADAR_OBJ_FIVE",
+    "21": "ACC_REPORT_CIPV_CUTTING_OUT",
+    "20": "ACC_REPORT_MCVLR_IN_PATH",
+    "19": "ACC_REPORT_MCVLR_DPP",
+    "18": "ACC_REPORT_FLEET_SPEEDS",
+    "17": "ACC_REPORT_TARGET_MCP",
+    "16": "ACC_REPORT_RADAR_OBJ_TWO",
+    "15": "ACC_REPORT_RADAR_OBJ_ONE",
+    "14": "ACC_REPORT_LC_EXTERNAL_STATE_ACTIVE_RESTRICTED",
+    "13": "ACC_REPORT_LC_EXTERNAL_STATE_ABORTED",
+    "12": "ACC_REPORT_LC_EXTERNAL_STATE_ABORTING",
+    "11": "ACC_REPORT_LC_HANDS_ON_REQD_STRUCK_OUT",
+    "10": "ACC_REPORT_CSA",
+    "9": "ACC_REPORT_TARGET_TYPE_FAULT",
+    "8": "ACC_REPORT_TARGET_TYPE_IPSO",
+    "7": "ACC_REPORT_TARGET_TYPE_TRAFFIC_LIGHT",
+    "6": "ACC_REPORT_TARGET_TYPE_STOP_SIGN",
+    "5": "ACC_REPORT_TARGET_CUTIN",
+    "4": "ACC_REPORT_TARGET_MCVR",
+    "3": "ACC_REPORT_TARGET_MCVL",
+    "2": "ACC_REPORT_TARGET_IN_FRONT_OF_CIPV",
+    "1": "ACC_REPORT_TARGET_CIPV",
+    "0": "ACC_REPORT_TARGET_NONE"
+  },
+  "DAS_lssState": {
+    "7": "LSS_STATE_OFF",
+    "6": "LSS_STATE_ABORT",
+    "5": "LSS_STATE_BLINDSPOT",
+    "4": "LSS_STATE_MONITOR",
+    "3": "LSS_STATE_ELK",
+    "2": "LSS_STATE_LKA",
+    "1": "LSS_STATE_LDW",
+    "0": "LSS_STATE_FAULT"
+  },
+  "DAS_radarTelemetry": {
+    "2": "RADAR_TELEMETRY_URGENT",
+    "1": "RADAR_TELEMETRY_NORMAL",
+    "0": "RADAR_TELEMETRY_IDLE"
+  },
+  "DAS_robState": {
+    "3": "ROB_STATE_MAPLESS",
+    "2": "ROB_STATE_ACTIVE",
+    "1": "ROB_STATE_MEASURE",
+    "0": "ROB_STATE_INHIBITED"
+  },
+  "DAS_driverInteractionLevel": {
+    "2": "CONTINUED_DRIVER_NOT_INTERACTING",
+    "1": "DRIVER_NOT_INTERACTING",
+    "0": "DRIVER_INTERACTING"
+  },
+  "DAS_ppOffsetDesiredRamp": {
+    "128": "PP_NO_OFFSET"
+  },
+  "DAS_longCollisionWarning": {
+    "15": "FCM_LONG_COLLISION_WARNING_SNA",
+    "12": "FCM_LONG_COLLISION_WARNING_VEHICLE_CIPV2",
+    "11": "FCM_LONG_COLLISION_WARNING_VEHICLE_MCVR2",
+    "10": "FCM_LONG_COLLISION_WARNING_VEHICLE_MCVR",
+    "9": "FCM_LONG_COLLISION_WARNING_VEHICLE_MCVL2",
+    "8": "FCM_LONG_COLLISION_WARNING_VEHICLE_MCVL",
+    "7": "FCM_LONG_COLLISION_WARNING_VEHICLE_CUTIN",
+    "6": "FCM_LONG_COLLISION_WARNING_VEHICLE_CIPV",
+    "5": "FCM_LONG_COLLISION_WARNING_TFL_STOPLINE",
+    "4": "FCM_LONG_COLLISION_WARNING_STOPSIGN_STOPLINE",
+    "3": "FCM_LONG_COLLISION_WARNING_IPSO",
+    "2": "FCM_LONG_COLLISION_WARNING_PEDESTRIAN",
+    "1": "FCM_LONG_COLLISION_WARNING_VEHICLE_UNKNOWN",
+    "0": "FCM_LONG_COLLISION_WARNING_NONE"
+  },
+  "DAS_headlightRequest": {
+    "3": "DAS_HEADLIGHT_REQUEST_INVALID",
+    "1": "DAS_HEADLIGHT_REQUEST_ON",
+    "0": "DAS_HEADLIGHT_REQUEST_OFF"
+  },
+  "DAS_hazardLightRequest": {
+    "3": "DAS_REQUEST_HAZARDS_SNA",
+    "2": "DAS_REQUEST_HAZARDS_UNUSED",
+    "1": "DAS_REQUEST_HAZARDS_ON",
+    "0": "DAS_REQUEST_HAZARDS_OFF"
+  },
+  "DAS_wiperSpeed": {
+    "15": "DAS_WIPER_SPEED_INVALID",
+    "14": "DAS_WIPER_SPEED_14",
+    "13": "DAS_WIPER_SPEED_13",
+    "12": "DAS_WIPER_SPEED_12",
+    "11": "DAS_WIPER_SPEED_11",
+    "10": "DAS_WIPER_SPEED_10",
+    "9": "DAS_WIPER_SPEED_9",
+    "8": "DAS_WIPER_SPEED_8",
+    "7": "DAS_WIPER_SPEED_7",
+    "6": "DAS_WIPER_SPEED_6",
+    "5": "DAS_WIPER_SPEED_5",
+    "4": "DAS_WIPER_SPEED_4",
+    "3": "DAS_WIPER_SPEED_3",
+    "2": "DAS_WIPER_SPEED_2",
+    "1": "DAS_WIPER_SPEED_1",
+    "0": "DAS_WIPER_SPEED_OFF"
+  },
+  "DAS_turnIndicatorRequest": {
+    "3": "DAS_TURN_INDICATOR_CANCEL",
+    "2": "DAS_TURN_INDICATOR_RIGHT",
+    "1": "DAS_TURN_INDICATOR_LEFT",
+    "0": "DAS_TURN_INDICATOR_NONE"
+  },
+  "DAS_highLowBeamDecision": {
+    "3": "DAS_HIGH_BEAM_SNA",
+    "2": "DAS_HIGH_BEAM_ON",
+    "1": "DAS_HIGH_BEAM_OFF",
+    "0": "DAS_HIGH_BEAM_UNDECIDED"
+  },
+  "DAS_highLowBeamOffReason": {
+    "5": "HIGH_BEAM_OFF_REASON_SNA",
+    "4": "HIGH_BEAM_OFF_REASON_HEAD_LIGHT",
+    "3": "HIGH_BEAM_OFF_REASON_AMBIENT_LIGHT",
+    "2": "HIGH_BEAM_OFF_REASON_MOVING_RADAR_TARGET",
+    "1": "HIGH_BEAM_OFF_REASON_MOVING_VISION_TARGET",
+    "0": "HIGH_BEAM_ON"
+  },
+  "DAS_turnIndicatorRequestReason": {
+    "6": "DAS_ACTIVE_COMMANDED_LANE_CHANGE",
+    "5": "DAS_CANCEL_FORK",
+    "4": "DAS_CANCEL_LANE_CHANGE",
+    "3": "DAS_ACTIVE_FORK",
+    "2": "DAS_ACTIVE_SPEED_LANE_CHANGE",
+    "1": "DAS_ACTIVE_NAV_LANE_CHANGE",
+    "0": "DAS_NONE"
+  },
+  "occupancyStatus": {
+    "1": "OCCUPIED",
+    "0": "UNOCCUPIED"
+  },
+  "buckleStatus": {
+    "1": "LATCHED",
+    "0": "UNLATCHED"
+  },
+  "SCCM_highBeamStalkStatus": {
+    "3": "SNA",
+    "0": "IDLE",
+    "1": "PULL",
+    "2": "PUSH"
+  },
+  "SCCM_washWipeButtonStatus": {
+    "3": "SNA",
+    "0": "NOT_PRESSED",
+    "2": "2ND_DETENT",
+    "1": "1ST_DETENT"
+  },
+  "SCCM_turnIndicatorStalkStatus": {
+    "3": "DOWN_1",
+    "5": "SNA",
+    "0": "IDLE",
+    "1": "UP_1",
+    "4": "DOWN_2",
+    "2": "UP_2"
+  },
+  "DI_tractionControlMode": {
+    "0": "TC_NORMAL",
+    "1": "TC_SLIP_START",
+    "4": "TC_ROLLS_MODE",
+    "2": "TC_DEV_MODE_1",
+    "5": "TC_DYNO_MODE",
+    "3": "TC_DEV_MODE_2"
+  },
+  "DI_epbRequest": {
+    "0": "DI_EPBREQUEST_NO_REQUEST",
+    "1": "DI_EPBREQUEST_PARK",
+    "2": "DI_EPBREQUEST_UNPARK"
+  },
+  "DI_keepAliveRequest": {
+    "1": "KEEP_ALIVE",
+    "0": "NO_REQUEST"
+  },
+  "DI_trackModeState": {
+    "0": "TRACK_MODE_UNAVAILABLE",
+    "1": "TRACK_MODE_AVAILABLE",
+    "2": "TRACK_MODE_ON"
+  },
+  "ESP_WheelRotationReR": {
+    "1": "WR_BACKWARD",
+    "0": "WR_FORWARD",
+    "3": "WR_NOT_DEFINABLE",
+    "2": "WR_STANDSTILL"
+  },
+  "ESP_WheelRotationReL": {
+    "1": "WR_BACKWARD",
+    "0": "WR_FORWARD",
+    "3": "WR_NOT_DEFINABLE",
+    "2": "WR_STANDSTILL"
+  },
+  "ESP_WheelRotationFrR": {
+    "1": "WR_BACKWARD",
+    "0": "WR_FORWARD",
+    "3": "WR_NOT_DEFINABLE",
+    "2": "WR_STANDSTILL"
+  },
+  "ESP_WheelRotationFrL": {
+    "1": "WR_BACKWARD",
+    "0": "WR_FORWARD",
+    "3": "WR_NOT_DEFINABLE",
+    "2": "WR_STANDSTILL"
+  },
+  "ESP_wheelSpeedsQF": {
+    "0": "ONE_OR_MORE_WSS_INVALID",
+    "1": "ALL_WSS_VALID"
+  },
+  "ESP_vehicleStandstillSts": {
+    "1": "STANDSTILL",
+    "0": "NOT_STANDSTILL"
+  },
+  "ESP_vehicleSpeed": {
+    "1023": "ESP_VEHICLE_SPEED_SNA"
+  },
+  "APS_appStatusMonitorState": {
+    "1": "STATUS_MONITOR_STATE_PWR_OFF",
+    "2": "STATUS_MONITOR_STATE_INIT",
+    "7": "STATUS_MONITOR_NUM_STATES",
+    "0": "STATUS_MONITOR_STATE_UNKNOWN",
+    "4": "STATUS_MONITOR_STATE_CRITICAL",
+    "6": "STATUS_MONITOR_STATE_RECOVERY",
+    "5": "STATUS_MONITOR_STATE_SHUTTING_DOWN",
+    "3": "STATUS_MONITOR_STATE_NOMINAL"
+  },
+  "APS_vehBehaviorState": {
+    "0": "VEH_BEHAVIOR_STATE_UNKNOWN",
+    "3": "VEH_BEHAVIOR_STATE_APS_BRIDGE_APP",
+    "1": "VEH_BEHAVIOR_STATE_APS_AVAILABLE",
+    "5": "VEH_BEHAVIOR_STATE_APS_FAIL_SAFE",
+    "7": "VEH_BEHAVIOR_NUM_STATES",
+    "2": "VEH_BEHAVIOR_STATE_APS_CONTROL",
+    "6": "VEH_BEHAVIOR_STATE_APS_OVERRIDE",
+    "4": "VEH_BEHAVIOR_STATE_APS_BRIDGE_APB"
+  },
+  "APS_canMaster": {
+    "0": "CAN_MASTER_APS",
+    "2": "CAN_MASTER_APB",
+    "3": "CAN_MASTER_SNA",
+    "1": "CAN_MASTER_APP"
+  },
+  "APS_appGpioState": {
+    "0": "AP_GPIO_STATE_PWR_DOWN_REBOOT",
+    "3": "AP_GPIO_STATE_HEALTHY",
+    "1": "AP_GPIO_STATE_DISABLED",
+    "2": "AP_GPIO_STATE_CRITICAL"
+  },
+  "APS_eacInternalState": {
+    "1": "APS_EAC_STATE_MOMENTARY",
+    "3": "APS_EAC_STATE_AUTOPARK",
+    "5": "APS_EAC_STATE_OVERRIDE",
+    "4": "APS_EAC_STATE_INHIBIT",
+    "0": "APS_EAC_STATE_INIT",
+    "2": "APS_EAC_STATE_CONTINUOUS",
+    "7": "APS_EAC_NUM_STATES",
+    "6": "APS_EAC_STATE_LSS"
+  },
+  "APS_apbStatusMonitorState": {
+    "1": "STATUS_MONITOR_STATE_PWR_OFF",
+    "2": "STATUS_MONITOR_STATE_INIT",
+    "7": "STATUS_MONITOR_NUM_STATES",
+    "0": "STATUS_MONITOR_STATE_UNKNOWN",
+    "4": "STATUS_MONITOR_STATE_CRITICAL",
+    "6": "STATUS_MONITOR_STATE_RECOVERY",
+    "5": "STATUS_MONITOR_STATE_SHUTTING_DOWN",
+    "3": "STATUS_MONITOR_STATE_NOMINAL"
+  },
+  "APS_apbGpioState": {
+    "0": "AP_GPIO_STATE_PWR_DOWN_REBOOT",
+    "3": "AP_GPIO_STATE_HEALTHY",
+    "1": "AP_GPIO_STATE_DISABLED",
+    "2": "AP_GPIO_STATE_CRITICAL"
+  },
+  "IBST_iBoosterStatus": {
+    "6": "IBOOSTER_ACTUATION",
+    "4": "IBOOSTER_ACTIVE_GOOD_CHECK",
+    "2": "IBOOSTER_FAILURE",
+    "5": "IBOOSTER_READY",
+    "3": "IBOOSTER_DIAGNOSTIC",
+    "0": "IBOOSTER_OFF",
+    "1": "IBOOSTER_INIT"
+  },
+  "IBST_driverBrakeApply": {
+    "1": "BRAKES_NOT_APPLIED",
+    "2": "DRIVER_APPLYING_BRAKES",
+    "3": "FAULT",
+    "0": "NOT_INIT_OR_OFF"
+  },
+  "IBST_internalState": {
+    "5": "TRANSITION_TO_IDLE",
+    "0": "NO_MODE_ACTIVE",
+    "4": "DIAGNOSTIC",
+    "6": "POST_DRIVE_CHECK",
+    "1": "PRE_DRIVE_CHECK",
+    "3": "EXTERNAL_BRAKE_REQUEST",
+    "2": "LOCAL_BRAKE_REQUEST"
+  },
+  "EPAS3S_currentTuneMode": {
+    "3": "STEERING_TUNE_RWD_COMFORT",
+    "1": "STEERING_TUNE_DM_STANDARD",
+    "5": "STEERING_TUNE_RWD_SPORT",
+    "0": "STEERING_TUNE_DM_COMFORT",
+    "4": "STEERING_TUNE_RWD_STANDARD",
+    "2": "STEERING_TUNE_DM_SPORT"
+  },
+  "EPAS3S_internalSASQF": {
+    "1": "IN_SPEC",
+    "0": "UNDEFINABLE_ACCURACY"
+  },
+  "EPAS3S_steeringReduced": {
+    "0": "NORMAL_ASSIST",
+    "1": "REDUCED_ASSIST"
+  },
+  "EPAS3S_steeringFault": {
+    "0": "NO_FAULT",
+    "1": "FAULT"
+  },
+  "EPAS3S_eacErrorCode": {
+    "15": "SNA",
+    "11": "EAC_ERROR_HIGH_TORSION_SAFETY",
+    "4": "EAC_ERROR_TMP_FAULT",
+    "2": "EAC_ERROR_MAX_SPEED",
+    "7": "EAC_ERROR_HIGH_ANGLE_RATE_REQ",
+    "0": "EAC_ERROR_IDLE",
+    "10": "EAC_ERROR_HIGH_MMOT_SAFETY",
+    "6": "EAC_ERROR_HIGH_ANGLE_REQ",
+    "8": "EAC_ERROR_HIGH_ANGLE_SAFETY",
+    "5": "EAR_ERROR_MAX_STEER_DELTA",
+    "13": "EAC_ERROR_PINION_VEL_DIFF",
+    "1": "EAC_ERROR_MIN_SPEED",
+    "14": "EAC_EXTERNAL_MONITOR_INHIBIT",
+    "12": "EAC_ERROR_LOW_ASSIST",
+    "9": "EAC_ERROR_HIGH_ANGLE_RATE_SAFETY",
+    "3": "EAC_ERROR_HANDS_ON"
+  },
+  "EPAS3S_handsOnLevel": {
+    "1": "LEVEL_1",
+    "0": "LEVEL_0",
+    "3": "LEVEL_3",
+    "2": "LEVEL_2"
+  },
+  "EPAS3S_eacStatus": {
+    "7": "SNA",
+    "2": "EAC_ACTIVE",
+    "4": "LANE_KEEP_ASSIST",
+    "3": "EAC_FAULT",
+    "1": "EAC_AVAILABLE",
+    "5": "EMERGENCY_LANE_KEEP",
+    "0": "EAC_INHIBITED"
+  },
+  "APS_eacAllow": {
+    "0": "INHIBIT",
+    "1": "ALLOW",
+    "2": "RESERVED",
+    "3": "SNA"
+  },
+  "VCFRONT_LVPowerStateIndex": {
+    "0": "Mux0",
+    "1": "Mux1"
+  },
+  "VCFRONT_vehiclePowerState": {
+    "3": "VEHICLE_POWER_STATE_DRIVE",
+    "1": "VEHICLE_POWER_STATE_CONDITIONING",
+    "2": "VEHICLE_POWER_STATE_ACCESSORY",
+    "0": "VEHICLE_POWER_STATE_OFF"
+  },
+  "VCFRONT_parkLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_cpLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_epasLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_espLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_hvcLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_radcLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_hvacCompLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_tasLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_pcsLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_ptcLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_sccmLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_tpmsLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_rcmLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_iBoosterLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_tunerLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_amplifierLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_das1HighCurrentLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_das2HighCurrentLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_diLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_disLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_oilPumpFrontLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_oilPumpRearLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_ocsLVRequest": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_vcleftHiCurrentLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_vcrightHiCurrentLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_uiHiCurrentLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "VCFRONT_uiAudioLVState": {
+    "1": "LV_ON",
+    "2": "LV_GOING_DOWN",
+    "3": "LV_FAULT",
+    "0": "LV_OFF"
+  },
+  "DI_uiSpeed": {
+    "255": "DI_UI_SPEED_SNA"
+  },
+  "DI_uiSpeedUnits": {
+    "0": "DI_SPEED_MPH",
+    "1": "DI_SPEED_KPH"
+  },
+  "DAS_trafficLightColor": {
+    "0": "NONE",
+    "1": "RED",
+    "2": "GREEN",
+    "3": "YELLOW"
+  },
+  "SCCM_steeringAngleSensorStatus": {
+    "0": "OK",
+    "1": "INIT",
+    "2": "ERROR",
+    "3": "ERROR_INIT"
+  },
+  "SCCM_steeringAngleValidity": {
+    "3": "SNA",
+    "2": "INIT",
+    "0": "INVALID",
+    "1": "VALID"
+  },
+  "DI_autoparkState": {
+    "0": "UNAVAILABLE",
+    "1": "STANDBY",
+    "2": "STARTED",
+    "3": "ACTIVE",
+    "4": "COMPLETE",
+    "5": "PAUSED",
+    "6": "ABORTED",
+    "7": "RESUMED",
+    "8": "UNPARK_COMPLETE",
+    "9": "SELFPARK_STARTED",
+    "15": "SNA"
+  },
+  "DI_parkBrakeState": {
+    "0": "UNAVAILABLE",
+    "1": "RELEASED",
+    "2": "REQUESTED",
+    "3": "APPLIED",
+    "4": "FAULTED",
+    "5": "PANIC_EPB",
+    "6": "PANIC_SKID",
+    "7": "RELEASING",
+    "15": "SNA"
+  },
+  "DI_autopilotRequest": {
+    "0": "IDLE",
+    "1": "ACTIVATE"
+  },
+  "DI_pmmStatus": {
+    "0": "INACTIVE",
+    "1": "ACTIVE",
+    "2": "LOGGING_ACTIVE",
+    "3": "SNA"
+  },
+  "DI_rollPreventionState": {
+    "0": "UNAVAILABLE",
+    "1": "STANDBY",
+    "2": "READY",
+    "3": "BUILD",
+    "4": "HOLD",
+    "5": "PARK",
+    "6": "FAULT",
+    "7": "INIT"
+  },
+  "DAS_offRoadAssist": {
+    "0": "disabled",
+    "3": "enabled"
+  },
+  "DAS_driverSteeringWeight": {
+    "0": "light",
+    "1": "standard",
+    "2": "heavy"
+  },
+  "DAS_distanceUnits": {
+    "1": "miles",
+    "0": "kilometers"
+  },
+  "DAS_fcwSensitivity": {
+    "0": "early",
+    "1": "medium",
+    "2": "late",
+    "3": "off"
+  },
+  "DAS_driverAccelerationMode": {
+    "0": "chill",
+    "1": "standard"
+  },
+  "rightBlinkerBlinking": {
+    "0": "off",
+    "1": "blinking, off",
+    "2": "blinking, on"
+  },
+  "anyDoorOpen": {
+    "1": "OPEN",
+    "0": "CLOSED"
+  },
+  "leftBlinkerBlinking": {
+    "0": "off",
+    "1": "blinking, off",
+    "2": "blinking, on"
+  },
+  "DAS_autopilotState": {
+    "15": "SNA",
+    "8": "ABORTING",
+    "3": "ACTIVE_NOMINAL",
+    "0": "DISABLED",
+    "4": "ACTIVE_RESTRICTED",
+    "5": "ACTIVE_NAV",
+    "14": "FAULT",
+    "1": "UNAVAILABLE",
+    "9": "ABORTED",
+    "2": "AVAILABLE"
+  },
+  "VCLEFT_switchStatusIndex": {
+    "1": "VCLEFT_SWITCH_STATUS_INDEX_1",
+    "2": "VCLEFT_SWITCH_STATUS_INDEX_INVALID",
+    "0": "VCLEFT_SWITCH_STATUS_INDEX_0"
+  },
+  "VCLEFT_swcLeftTiltRight": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_rightMirrorTilt": {
+    "4": "MIRROR_TILT_LEFT",
+    "2": "MIRROR_TILT_UP",
+    "3": "MIRROR_TILT_RIGHT",
+    "0": "MIRROR_TILT_STOP",
+    "1": "MIRROR_TILT_DOWN"
+  },
+  "VCLEFT_swcLeftPressed": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatTrackBack": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_swcRightTiltLeft": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_swcRightTiltRight": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatTrackForward": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatTiltDown": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_swcRightPressed": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_swcLeftTiltLeft": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatTiltUp": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLiftDown": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLiftUp": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatBackrestBack": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatBackrestForward": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLumbarDown": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLumbarUp": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLumbarIn": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontSeatLumbarOut": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontBuckleSwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_frontOccupancySwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_rearLeftBuckleSwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_rearCenterOccupancySwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_rearLeftOccupancySwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCLEFT_rearRightOccupancySwitch": {
+    "2": "SWITCH_ON",
+    "0": "SWITCH_SNA",
+    "3": "SWITCH_FAULT",
+    "1": "SWITCH_OFF"
+  },
+  "VCRIGHT_frontLatchStatus": {
+    "8": "LATCH_FAULT",
+    "2": "LATCH_CLOSED",
+    "1": "LATCH_OPENED",
+    "3": "LATCH_CLOSING",
+    "7": "LATCH_DEFAULT",
+    "4": "LATCH_OPENING",
+    "5": "LATCH_AJAR",
+    "6": "LATCH_TIMEOUT",
+    "0": "LATCH_SNA"
+  },
+  "VCRIGHT_rearLatchStatus": {
+    "8": "LATCH_FAULT",
+    "2": "LATCH_CLOSED",
+    "1": "LATCH_OPENED",
+    "3": "LATCH_CLOSING",
+    "7": "LATCH_DEFAULT",
+    "4": "LATCH_OPENING",
+    "5": "LATCH_AJAR",
+    "6": "LATCH_TIMEOUT",
+    "0": "LATCH_SNA"
+  },
+  "VCRIGHT_mirrorState": {
+    "3": "MIRROR_STATE_FOLD_UNFOLD",
+    "1": "MIRROR_STATE_TILT_X",
+    "0": "MIRROR_STATE_IDLE",
+    "2": "MIRROR_STATE_TILT_Y",
+    "4": "MIRROR_STATE_RECALL"
+  },
+  "VCRIGHT_mirrorFoldState": {
+    "4": "MIRROR_FOLD_STATE_UNFOLDING",
+    "1": "MIRROR_FOLD_STATE_FOLDED",
+    "3": "MIRROR_FOLD_STATE_FOLDING",
+    "0": "MIRROR_FOLD_STATE_UNKNOWN",
+    "2": "MIRROR_FOLD_STATE_UNFOLDED"
+  },
+  "VCRIGHT_trunkLatchStatus": {
+    "8": "LATCH_FAULT",
+    "2": "LATCH_CLOSED",
+    "1": "LATCH_OPENED",
+    "3": "LATCH_CLOSING",
+    "7": "LATCH_DEFAULT",
+    "4": "LATCH_OPENING",
+    "5": "LATCH_AJAR",
+    "6": "LATCH_TIMEOUT",
+    "0": "LATCH_SNA"
+  },
+  "VCRIGHT_mirrorRecallState": {
+    "5": "MIRROR_RECALL_STATE_RECALLING_STOPPED",
+    "2": "MIRROR_RECALL_STATE_RECALLING_AXIS_2",
+    "0": "MIRROR_RECALL_STATE_INIT",
+    "3": "MIRROR_RECALL_STATE_RECALLING_COMPLETE",
+    "4": "MIRROR_RECALL_STATE_RECALLING_FAILED",
+    "1": "MIRROR_RECALL_STATE_RECALLING_AXIS_1"
+  },
+  "VCRIGHT_vehiclePowerStateDBG": {
+    "3": "VEHICLE_POWER_STATE_DRIVE",
+    "1": "VEHICLE_POWER_STATE_CONDITIONING",
+    "2": "VEHICLE_POWER_STATE_ACCESSORY",
+    "0": "VEHICLE_POWER_STATE_OFF"
+  },
+  "VCRIGHT_rearDefrostState": {
+    "2": "HEATER_STATE_OFF",
+    "4": "HEATER_STATE_FAULT",
+    "1": "HEATER_STATE_ON",
+    "0": "HEATER_STATE_SNA",
+    "3": "HEATER_STATE_OFF_UNAVAILABLE"
+  },
+  "VCRIGHT_mirrorHeatState": {
+    "2": "HEATER_STATE_OFF",
+    "4": "HEATER_STATE_FAULT",
+    "1": "HEATER_STATE_ON",
+    "0": "HEATER_STATE_SNA",
+    "3": "HEATER_STATE_OFF_UNAVAILABLE"
+  },
+  "SCCM_rightStalkStatus": {
+    "3": "DOWN_1",
+    "6": "SNA",
+    "0": "IDLE",
+    "5": "INIT",
+    "1": "UP_1",
+    "4": "DOWN_2",
+    "2": "UP_2"
+  },
+  "SCCM_parkButtonStatus": {
+    "3": "SNA",
+    "0": "NOT_PRESSED",
+    "2": "INIT",
+    "1": "PRESSED"
+  },
+  "VCLEFT_frontLatchStatus": {
+    "8": "LATCH_FAULT",
+    "2": "LATCH_CLOSED",
+    "1": "LATCH_OPENED",
+    "3": "LATCH_CLOSING",
+    "7": "LATCH_DEFAULT",
+    "4": "LATCH_OPENING",
+    "5": "LATCH_AJAR",
+    "6": "LATCH_TIMEOUT",
+    "0": "LATCH_SNA"
+  },
+  "VCLEFT_rearLatchStatus": {
+    "8": "LATCH_FAULT",
+    "2": "LATCH_CLOSED",
+    "1": "LATCH_OPENED",
+    "3": "LATCH_CLOSING",
+    "7": "LATCH_DEFAULT",
+    "4": "LATCH_OPENING",
+    "5": "LATCH_AJAR",
+    "6": "LATCH_TIMEOUT",
+    "0": "LATCH_SNA"
+  },
+  "VCLEFT_mirrorState": {
+    "3": "MIRROR_STATE_FOLD_UNFOLD",
+    "1": "MIRROR_STATE_TILT_X",
+    "0": "MIRROR_STATE_IDLE",
+    "2": "MIRROR_STATE_TILT_Y",
+    "4": "MIRROR_STATE_RECALL"
+  },
+  "VCLEFT_mirrorFoldState": {
+    "4": "MIRROR_FOLD_STATE_UNFOLDING",
+    "1": "MIRROR_FOLD_STATE_FOLDED",
+    "3": "MIRROR_FOLD_STATE_FOLDING",
+    "0": "MIRROR_FOLD_STATE_UNKNOWN",
+    "2": "MIRROR_FOLD_STATE_UNFOLDED"
+  },
+  "VCLEFT_mirrorRecallState": {
+    "5": "MIRROR_RECALL_STATE_RECALLING_STOPPED",
+    "2": "MIRROR_RECALL_STATE_RECALLING_AXIS_2",
+    "0": "MIRROR_RECALL_STATE_INIT",
+    "3": "MIRROR_RECALL_STATE_RECALLING_COMPLETE",
+    "4": "MIRROR_RECALL_STATE_RECALLING_FAILED",
+    "1": "MIRROR_RECALL_STATE_RECALLING_AXIS_1"
+  },
+  "VCLEFT_mirrorHeatState": {
+    "2": "HEATER_STATE_OFF",
+    "4": "HEATER_STATE_FAULT",
+    "1": "HEATER_STATE_ON",
+    "0": "HEATER_STATE_SNA",
+    "3": "HEATER_STATE_OFF_UNAVAILABLE"
+  },
+  "DAS_heaterRequest": {
+    "0": "DAS_HEATER_SNA",
+    "2": "DAS_HEATER_ON",
+    "1": "DAS_HEATER_OFF"
+  },
+  "VCFRONT_indicatorLeftRequest": {
+    "2": "TURN_SIGNAL_ACTIVE_HIGH",
+    "1": "TURN_SIGNAL_ACTIVE_LOW",
+    "0": "TURN_SIGNAL_OFF"
+  },
+  "VCFRONT_indicatorRightRequest": {
+    "2": "TURN_SIGNAL_ACTIVE_HIGH",
+    "1": "TURN_SIGNAL_ACTIVE_LOW",
+    "0": "TURN_SIGNAL_OFF"
+  },
+  "VCFRONT_hazardLightRequest": {
+    "1": "HAZARD_REQUEST_BUTTON",
+    "6": "HAZARD_REQUEST_CAR_ALARM",
+    "5": "HAZARD_REQUEST_CRASH",
+    "7": "HAZARD_REQUEST_DAS",
+    "2": "HAZARD_REQUEST_LOCK",
+    "4": "HAZARD_REQUEST_MISLOCK",
+    "0": "HAZARD_REQUEST_NONE",
+    "8": "HAZARD_REQUEST_UDS",
+    "3": "HAZARD_REQUEST_UNLOCK"
+  },
+  "VCFRONT_lowBeamLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_lowBeamRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_highBeamLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_highBeamRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_DRLLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_DRLRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_fogLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_fogRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_sideMarkersStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_sideRepeaterLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_sideRepeaterRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_turnSignalLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_turnSignalRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_parkLeftStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_parkRightStatus": {
+    "2": "LIGHT_FAULT",
+    "0": "LIGHT_OFF",
+    "1": "LIGHT_ON",
+    "3": "LIGHT_SNA"
+  },
+  "VCFRONT_simLatchingStalk": {
+    "0": "SIMULATED_LATCHING_STALK_IDLE",
+    "1": "SIMULATED_LATCHING_STALK_LEFT",
+    "2": "SIMULATED_LATCHING_STALK_RIGHT",
+    "3": "SIMULATED_LATCHING_STALK_SNA"
+  },
+  "StateRxChInternal": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "StateTxChInternal": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "StateRxCh1": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "StateTxCh1": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "StateRxCh2": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "StateTxCh2": {
+    "0": "Disable",
+    "1": "Enable"
+  },
+  "FixType": {
+    "0": "No fix",
+    "1": "Dead reckoning only",
+    "2": "2D-fix",
+    "3": "3D-fix",
+    "4": "GNSS + dead reckoning combined",
+    "5": "Time only fix"
+  },
+  "TimeValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "TimeConfirmed": {
+    "0": "Unconfirmed",
+    "1": "Confirmed"
+  },
+  "PositionValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "AltitudeValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "AttitudeValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "DistanceValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "SpeedValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "FenceValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  },
+  "FenceCombined": {
+    "0": "Unknown",
+    "1": "Inside",
+    "2": "Outside"
+  },
+  "Fence1": {
+    "0": "Unknown",
+    "1": "Inside",
+    "2": "Outside"
+  },
+  "Fence2": {
+    "0": "Unknown",
+    "1": "Inside",
+    "2": "Outside"
+  },
+  "Fence3": {
+    "0": "Unknown",
+    "1": "Inside",
+    "2": "Outside"
+  },
+  "Fence4": {
+    "0": "Unknown",
+    "1": "Inside",
+    "2": "Outside"
+  },
+  "AlignStatus": {
+    "0": "Idle",
+    "1": "Ongoing",
+    "2": "Coarse",
+    "3": "Fine"
+  },
+  "AlignXYError": {
+    "0": "No error",
+    "1": "Error"
+  },
+  "AlignZError": {
+    "0": "No error",
+    "1": "Error"
+  },
+  "AlignError": {
+    "0": "No error",
+    "1": "Error"
+  },
+  "ImuValid": {
+    "0": "Invalid",
+    "1": "Valid"
+  }
+}
